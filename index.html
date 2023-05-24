@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>A+A security</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrappar">
+        <div class="container">
+          <div class="row">
+            <div>
+              <img src="images/logo.png" />
+            </div>
+
+            <div class="menu">
+              <ul class="menuLinks">
+                <li><a class='aboutUsBtn' href="#">Haqqımızda</a></li>
+                <li><a class='dropBtn' href="#">Məhsullar və həllər</a></li>
+                <li><a href="#">Lahiyələr</a></li>
+                <li><a href="#">Xəbərlər</a></li>
+                <li><a href="#">Əlaqə</a></li>
+              </ul>
+            </div>
+            <div class="menuLangSearch">
+              <ul class="menuLangSearchLinks">
+                <li><a href="">Ing \</a></li>
+                <li><a href="">Rus</a></li>
+                <li>
+                  <a href="#" onClick="openGlass()" id='openGlas'><i class="fa-solid fa-magnifying-glass" ></i></a>
+                </li>
+              </ul>
+            </div>
+           
+            <div class="mobileSection">
+              <a onClick="openGlass()" class="glass" id="openGlas"><i class="fa-solid fa-magnifying-glass" ></i></a>
+              <a href="#" class="humburger" id="" onClick='openMenu()'><i class="fa-solid fa-bars"></i></a>
+            </div>
+            
+          </div>
+             
+          
+        <div class="mobileAndDesk" id="mobileAndDesk">
+          <input type="search" id="" />
+          <i class="fa-solid fa-xmark " id="closeInput" onClick="closeInput()"></i>
+        </div> 
+        </div>
+        <div class="mobileMenu" id="mobileNav">
+          <div class="mobileMenuLinks">
+              <ul class="mobileMenuLink">
+                  <li onClick="openAboutUs()">
+                    <a>Haqqımızda</a>
+                    <div class="mobileVideoTitle" id="AboutUs">
+                      <ul class="AboutUsLinks">
+                        <li><a class="mobileAbout" href="#" >Şirkət haqqında</a></li>
+                        <li><a class="mobileQalery" href="#">Qalereya</a></li>
+                      </ul>
+                       
+                    </div>
+                  </li>
+                  <li onClick="openProAndSolve()" ><a>Məhsullar və həllər</a>
+                  <div class="closeSubMenu" id="openSubMenu">
+                    <div class="mobileVideoTitle">
+                      <a class="elektron mobileVideoSystem mobileElektron" href="#" onClick="openMobileElektron()">
+                        Elektron təhlükəsizlik sistemləri</a>
+                      </div>
+                      <div class='mobileStars'>
+                        <ul id="subMobileElektron">
+                          <li><a href="#">Video müşahidə sistemləri,</a></li>
+                          <li><a href="#">Girişə və iş vaxtına nəzarət sistemləri,</a></li>
+                          <li><a href="#">Yanğın siqnalizasiya sistemləri,</a></li>
+                          <li><a href="#">Mühafizə xəbərdarlıq sistemləri,</a></li>
+                          <li><a href="#">Şlaqbaunlar, Turniketlər, Bollardlar və s,</a></li>
+                          <li><a href="#">Ödənişli və ödənişsiz dayanacaq sistemləri,</a></li>
+                          <li><a href="#">Şəbəkə avadanlığı</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mobileVideoTitle"><a  class="mobileElektron" href="#" onClick="openMobileTelemetric()">Simsiz telemetriya</a></div>
+                      <div class='mobileStars'>
+                        <ul id="mobileSubTelemetric">
+                          <li><a href="#">Nəqliyyat vasitələrinin Monitorinqi və İdarə olunması(GPS Monitoring)</a></li>
+                          <li><a href="#">Mikroiqlimə nəzarət,</a></li>
+                          <li><a href="#">Yanğın siqnalizasiya sistemləri,</a></li>
+                          <li><a href="#">Güc-enerji, istehsalat və metrik avadanlığa nəzarət və idarəetmə,</a></li>
+                          <li><a href="#">Bankomatlar, ödəniş terminalları və satış  aftomatlarına nəzarət və mühafizə</a></li>
+                          <li><a href="#">Ödənişli və ödənişsiz dayanacaq sistemləri,</a></li>
+                          <li><a href="#">Piyada işçilərə nəzarət,</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobileVideoTitle"><a class="mobileElektron" href="#" onClick="mobileSolves()">Məqsədli həllər</a></div>
+                    <div class='mobileStars'>
+                      <ul id="mobileSubSolvesMenu">
+                        <li><a href="#">Otel kilidləri,seyfləri, minibarları, enerjini qənaət edən cihazlar və s,</a></li>
+                        <li><a href="#">Elektromexanik kilidlər, qapı dartıcılar, panik barlar, master key sistemləri,</a></li>
+                        <li><a href="#">X-ray avadanlıqları, çərçivə və əl metal detektolar</a></li>
+                        <li><a href="#">Yanacaq doldurma məntəqələrinə aid olan   dispenserlar,nasoslar, yanacağın səviyyəsini ölçən cihazlar,</a></li>
+                      </ul>
+                  </div>
+                  <div class="mobileVideoTitle"><a class="mobileElektron" href="#" onClick="mobileProgram()">Proqramlaşdırma və avtomatlaşdırma</a></div>
+                    <div class='mobileStars'>
+                      <ul id="mobileSubProgMenu">
+                        <li><a href="#">Proqramlaşdırma</a></li>
+                        <li><a href="#">Biznesin Avtomatlaşdırılması</a></li>
+                        <li><a href="#">İOT</a></li> 
+                      </ul>
+                  </div>
+                </div>
+                  </li>
+                  <li>Lahiyələr</li>
+                  <li>Əlaqə</li>
+                  <li>İng \ <span>Rus</span></li>
+              </ul>
+              <i class="fa-solid fa-xmark " id="close" onClick="closeMenu()"></i>
+          </div>
+          
+      </div>
+      </div>
+     
+       <div class="dropDown">
+        <!-- <div class='container'>  -->
+          <div class="dropLinks">
+
+            <div class="dropLink">
+              <ul class="subLinks">
+                <li class="electronDropdown">
+                  <a class="elektron videoSystem" href="#">Elektron təhlükəsizlik sistemləri</a>
+                  <div class='stars'>
+                    <ul id="subElektron">
+                      <li><a href="#">Video müşahidə sistemləri,</a></li>
+                      <li><a href="#">Girişə və iş vaxtına nəzarət sistemləri,</a></li>
+                      <li><a href="#">Yanğın siqnalizasiya sistemləri,</a></li>
+                      <li><a href="#">Mühafizə xəbərdarlıq sistemləri,</a></li>
+                      <li><a href="#">Şlaqbaunlar, Turniketlər, Bollardlar və s,</a></li>
+                      <li><a href="#">Ödənişli və ödənişsiz dayanacaq sistemləri,</a></li>
+                      <li><a href="#">Şəbəkə avadanlığı</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li class='telemetricDropdown'>
+                  <a  class="elektron" href="#">Simsiz telemetriya</a>
+                    <div class='stars'>
+                      <ul id="subTelemetric">
+                        <li><a href="#">Nəqliyyat vasitələrinin Monitorinqi və İdarə olunması(GPS Monitoring)</a></li>
+                        <li><a href="#">Mikroiqlimə nəzarət,</a></li>
+                        <li><a href="#">Yanğın siqnalizasiya sistemləri,</a></li>
+                        <li><a href="#">Güc-enerji, istehsalat və metrik avadanlığa nəzarət və idarəetmə,</a></li>
+                        <li><a href="#">Bankomatlar, ödəniş terminalları və satış  aftomatlarına nəzarət və mühafizə</a></li>
+                        <li><a href="#">Ödənişli və ödənişsiz dayanacaq sistemləri,</a></li>
+                        <li><a href="#">Piyada işçilərə nəzarət,</a></li>
+                      </ul>
+                  </div>
+                </li>
+                <li class="aimSolves">
+                  <a class="elektron" href="#">Məqsədli həllər</a>
+                  <div class='stars'>
+                    <ul id="subSolvesMenu">
+                      <li><a href="#">Otel kilidləri,seyfləri, minibarları, enerjini qənaət edən cihazlar və s,</a></li>
+                      <li><a href="#">Elektromexanik kilidlər, qapı dartıcılar, panik barlar, master key sistemləri,</a></li>
+                      <li><a href="#">X-ray avadanlıqları, çərçivə və əl metal detektolar</a></li>
+                      <li><a href="#">Yanacaq doldurma məntəqələrinə aid olan   dispenserlar,nasoslar, yanacağın səviyyəsini ölçən cihazlar,</a></li>
+                    </ul>
+                </div>
+                </li>
+
+
+                <li class="progAndAvto">
+                  <a class="elektron" href="#">Proqramlaşdırma və avtomatlaşdırma</a>
+                  <div class='stars'>
+                    <ul id="subProgMenu">
+                      <li><a href="#">Proqramlaşdırma</a></li>
+                      <li><a href="#">Biznesin Avtomatlaşdırılması</a></li>
+                      <li><a href="#">İOT</a></li> 
+                    </ul>
+                </div>
+                </li>
+            </ul>
+            </div>
+            
+           
+         <!--  </div>     -->
+      </div>
+    </div>
+    <div class="dropDown aboutDropDown">
+     <!--  <div class='container'>  -->
+        <div class="dropLinks">
+
+          <div class="dropLink">
+            <ul class="subLinks aboutSubLink">
+              <li>
+                <a class="elektron videoSystem" href="#">Şirkət haqqında</a>
+              </li>
+              <li class='telemetricDropdown'>
+                <a  class="elektron" href="#">Qalereya</a>
+              </li>
+             
+          </ul>
+          </div>
+          
+         
+        </div>    
+   <!--  </div> -->
+    
+  </div>
+    
+    </header>
+    <section>
+      <div class="photoContainer">
+        <div class="photo"><img src="images/lorry.png" /></div>
+        <div class="photo"><img src="images/door.png" /></div>
+        <div class="photo"><img src="images/elSec.png" /></div>
+        <div class="photo"><img src="images/brain.png" /></div>
+        <ul class="photoDots">
+          <li class="dotLinks"></li>
+          <li class="dotLinks"></li>
+          <li class="dotLinks"></li>
+          <li class="dotLinks"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="aboutUsSection">
+      <div class="container">
+        <div class="row aboutUsDirection">
+          <div class="aboutUs">
+            <div class="buildings"><img src="images/buildings.png" /></div>
+            <div class="linza"><img src="images/linza.png" /></div>
+          </div>
+          <div class="aboutUsTexts">
+            <div class="aboutUsText">
+              <h3>Şirkət haqqında məlumat</h3>
+              <p>
+                Elektron Təhlükəsizlik, Kilidləmə, GPS Monitoring
+                Naqilsiz Telemetriya və Elektron İdarə Etmə Sistemləri 
+                sahəsində böyük təcrübəyə malik olan distribyutor və
+                inteqratordur.<br>
+                Biz, fiziki şəxslərdən və kiçik müəssisələrdən tutmuş 
+                dövlət idarələri və iri korporasiyalara qədər, geniş müştəri
+                
+                dairəsi ilə əməkdaşlıq edirik.
+                Missiyamız müştərilərimizə ən keyfiyyətli və sərfəli xidmət
+                göstərməkdən ibarətdir.
+              </p>
+            </div>
+            <div class="aboutUsMore"><a href="#">Ətraflı</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="productsAndSolves">
+        <img
+          class="product"
+          src="images/prodandsolve.png"
+          width="400"
+          height="40"
+        />
+        <h3>Məhsullar və həllər</h3>
+        <div class="pAndStexts">
+          <div class="pAndStext">
+            <div class="solveTitleandImage">
+              <img src="images/camera.png" />
+              <h3>Elektron təhlükəsizlik sistemləri</h3>
+            </div>
+            <div class="menuSolveLinks">
+              <ul>
+                <li><a href="#">Video müşahidə sistemləri,</a></li>
+                <li><a href="#">Yanğın siqnalizasiya sistemləri,</a></li>
+                <li>
+                  <a href="#">Şlaqbaunlar, Turniketlər, Bollardlar və s,</a>
+                </li>
+                <li><a href="#">Mühafizə xəbərdarlıq sistemləri,</a></li>
+                <li>
+                  <a href="#">Ödənişli və ödənişsiz dayanacaq sistemləri,</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pAndStext">
+            <div class="solveTitleandImage ">
+              <img src="images/calculate.png" />
+              <h3>Elektron təhlükəsizlik sistemləri</h3>
+            </div>
+            <div class="menuSolveLinks">
+              <ul>
+                <li>
+                  <a href="#"
+                    >Otel kilidləri,seyfləri, minibarları,<br />
+                    enerjini qənaət edən cihazlar və s,</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Elektromexanik kilidlər, qapı dartıcılar,<br />
+                    barlar, master key sistemləri,</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >X-ray avadanlıqları, çərçivə və əl metal detektolar</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >MYanacaq doldurma məntəqələrinə aid olan dispenserlar,<br />
+                    nasoslar, yanacağın səviyyəsini ölçən cihazlar,</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pAndStext">
+            <div class="solveTitleandImage ">
+              <img src="images/wireless.png" />
+              <h3>Elektron təhlükəsizlik sistemləri</h3>
+            </div>
+            <div class="menuSolveLinks securitSystem">
+              <ul>
+                <li>
+                  <a href="#"
+                    >Nəqliyyat vasitələrinin Monitorinqi və İdarə olunması(GPS
+                    Monitoring)Otel kilidləri,seyfləri, minibarları,<br />
+                    enerjini qənaət edən cihazlar və s,</a
+                  >
+                </li>
+                <li><a href="#">Mikroiqlimə nəzarət,</a></li>
+                <li><a href="#">Piyada işçilərə nəzarət,</a></li>
+                <li>
+                  <a href="#"
+                    >Güc-enerji, istehsalat və metrik avadanlığanəzarət və
+                    idarəetmə,</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Bankomatlar, ödəniş terminalları və satış aftomatlarına
+                    nəzarət və mühafizə</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pAndStext">
+            <div class="solveTitleandImage iot">
+              <img src="images/programming.png" />
+              <h3>Elektron təhlükəsizlik sistemləri</h3>
+            </div>
+            <div class="menuSolveLinks">
+              <ul>
+                <li><a href="#">Proqramlaşdırma və s,</a></li>
+                <li><a href="#">Biznesin Avtomatlaşdırılması</a></li>
+                <li><a href="#">İOT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="infoGrafiks">
+      <div class="infoGrafiks">
+        <img class='infografikImage' src="images/İnfoqrafiq blok.png" width="400"
+        height="40" />
+        <h3>Infoqrafik blok</h3>
+      </div>
+      <div class="counterGrafik">
+        <div class="a">
+          <div class="counterTexts">
+            <div>
+              <h3 data-target="795" class="count">0</h3>
+            <p>Lerom</p>
+            </div>
+        
+         
+            <div>
+              <h3 data-target="2255+" class="count">0<h3>
+                <p>Lerom</p>
+            </div>
+          </div>
+          <div class="counterTexts">
+            <div>
+              <h3 data-target="6000" class="count">0</h3>
+            <p>Lerom</p>
+            </div>
+          
+      
+            <div>
+              <h3 data-target="3000" class="count">0</h3>
+            <p>Lerom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+        <div class="container">
+          <div class='newsTitle'>
+               <img class='newsTitleImage' src='images/news.png' width="400" height="40">
+               <h3>Yeni Xəbərlər</h3>
+          </div>
+          <div class='newsImages'>
+               <div class="smallCamera newsImage">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                  Vulputate amet, et nibh lorem eget dignissim.<br>
+                  Scelerisque mauris egestas est....</p>
+               </div>
+               <div class="newsImage"><img src="images/wallCamera.png"></div>
+               <div class='newsImage'><img src="images/wallCamera.png"></div>
+               <div class='newsImage'><img src="images/domophone.png"></div>
+               
+          </div>
+          <div class="newsMore"><a href="#">Ətraflı</a></div>
+        </div>
+    </section>
+    <section>
+      <div class='container'>
+        <div class='projectTitle'>
+             <img class="projectTitleImage" src="images/Layihələr.png" width="350" height="35">
+             <h3>Layihələr</h3>
+        </div>
+        <div class='projectImages'>
+         
+          <div clas='projectImage'><img src="images/buildings1.png"></div>
+          <div class='projectImage'><img src="images/buildings2.png"></div>
+          
+        </div>
+        <div class="projectMore"><a href="#">Ətraflı</a></div>
+      </div>
+    </section>
+    <section>
+      <div class='container'>
+        <div class='partnerTitle'>
+             <img class="partnerTitleImage" src="images/partner.png" width="350" height="35">
+             <h3>Partnyor Şirkətlər qrupu</h3>
+        </div>
+        <div class='partnerLogos'>
+          <div class='partnerLogo'><img src="images/mobotix.png"></div>
+          <div class='partnerLogo'><img src="images/GeoVision.png"></div>
+          <div class='partnerLogo'><img src="images/abloy.png"></div>
+          <div class='partnerLogo'><img src="images/ruptela.png"></div>
+          <div class='partnerLogo'><img src="images/teltonika.png"></div>
+          <div class='partnerLogo'><img src="images/vingCard.png"></div>
+          <div class='partnerLogo'><img src="images/Bakcell.png"></div>
+          <div class='partnerLogo'><img src="images/Azercell.png"></div>
+        </div>
+        <div class="partnerMore"><a href="#">Ətraflı</a></div>
+      </div>
+    </section>
+    <section>
+      <div class='container'>
+        <div class='addresTitle'>
+             <img class="addresTitleImage" src="images/addres.png" width="350" height="35">
+             <h3>Ünvan</h3>
+        </div>
+        <div class='addresMap'>
+          <p><a href="#">Bizimlə əlaqə</a></p>
+          <iframe class='mapDiv' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12154.710455105565!2d49.8550584!3d40.3938372!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6b94818acf%3A0x5318508b8a339b23!2sA%2BA%20Group%20Of%20Companies!5e0!3m2!1sen!2saz!4v1683231570116!5m2!1sen!2saz"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <div class='container footerAllLinks'>
+       
+           <div class="footerLinks">
+              <div class="footerImage">
+                  <img src='images/footerLogo.png'>
+              </div>
+              <div class="contactAndSub">
+              <div class="footerSecurity">
+                   <h3>A+A security</h3> 
+                   <ul>
+                       <li><a class='footerUnderLine' href="#">Haqqımızda</a></li>
+                       <li><a class='footerUnderLine' href="#">Məhsullar və həllər</a></li>
+                       <li><a class='footerUnderLine' href="#">Layihələr</a></li>
+                       <li><a class='footerUnderLine' href="#">Xəbərlər</a></li>
+                       <li><a class='footerUnderLine' href="#">Əlaqə</a></li>
+                   </ul>
+              </div>
+              
+              <div class="footerContact">
+                <h3>Əlaqə</h3> 
+                <ul>
+                    <li><a class='footerUnderLine' href="#">(+994 12) 496-00-56</a></li>
+                    <li><a class='footerUnderLine' href="#">(+994 50) 259-05-05</a></li>
+                    <li><a class='footerUnderLine' href="#">sales@aplusa-security.com</a></li>
+                    <li><a>Akhmad Bay Aga oglu 24B</a></li>
+                </ul>
+              </div>
+              </div>
+              <div class="footerSubscriber">
+                <h3>Abunəlik</h3> 
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    
+                </ul>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div class="footerFinish">
+            <div><p>(c) 2022 A+A Security, Bütün Hüquqlar Qorunur</p></div>
+            <div><p>Design by Nigar Alkhasova</p></div>
+        </div>
+    </footer>
+    
+    <script src='main/js/script.js'></script>
+  </body>
+</html>
